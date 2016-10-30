@@ -1,0 +1,20 @@
+=encoding UTF-8
+
+=head1 NAME
+
+PhoneNumber::Util - Perlish wrapper of libphonenumber
+
+=head1 SYNOPSIS
+
+ use PhoneNumber::Util 'is_phone_number';
+
+=head1 SEE ALSO
+
+L<Number::Phone>
+
+=head1 COPYRIGHT AND LICENSE
+
+Copyright © 2016 CV-Library Ltd.
+
+This is free software; you can redistribute it and/or modify it under the
+same terms as Perl itself.
