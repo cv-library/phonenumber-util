@@ -4,6 +4,7 @@
 #include "perl.h"
 #include "XSUB.h"
 
+#undef Move
 #undef New
 #include "phonenumbers/phonenumberutil.h"
 
