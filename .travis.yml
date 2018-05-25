@@ -1,0 +1,6 @@
+script:
+    - docker build -t test .
+    - docker run -tu `id -u`:`id -g` -v $PWD:/root test
+services:
+    - docker
+sudo: required
