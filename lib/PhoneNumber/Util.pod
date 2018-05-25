@@ -4,6 +4,11 @@
 
 PhoneNumber::Util - Perlish wrapper of libphonenumber
 
+=for html
+<a href=https://travis-ci.org/cv-library/phonenumber-util>
+    <img src=https://api.travis-ci.org/cv-library/phonenumber-util.svg>
+</a>
+
 =head1 SYNOPSIS
 
  use PhoneNumber::Util 'is_phone_number';
