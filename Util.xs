@@ -31,3 +31,23 @@ is_phone_number(country, number)
             XSRETURN_YES;
         else
             XSRETURN_NO;
+
+void
+is_premium_number(country, number)
+    PPCODE:
+        PhoneNumber phoneNumber;
+
+        PhoneNumberUtil::ErrorType err = phone.Parse(
+            (char *)SvPV_nolen(ST(1)),
+            (char *)SvPV_nolen(ST(0)),
+            &phoneNumber
+        );
+
+        if (
+            err == PhoneNumberUtil::ErrorType::NO_PARSING_ERROR
+            &&
+            phone.GetNumberType(phoneNumber) == PhoneNumberUtil::PhoneNumberType::PREMIUM_RATE
+        )
+            XSRETURN_YES;
+        else
+            XSRETURN_NO;
